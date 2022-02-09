@@ -14,15 +14,15 @@
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./style.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
-    <script src="./js/jquery-2.1.0.min.js" async></script>
-    <script src="./js/bootstrap.min.js" async></script>
-    <script src="./js/blocs.min.js" async></script>
-    <script src="./js/jqBootstrapValidation.min.js" async></script>
-    <script src="./js/formHandler.min.js" async></script>
+    <script src="./js/jquery-2.1.0.min.js" defer></script>
+    <script src="./js/bootstrap.min.js" defer></script>
+    <script src="./js/blocs.min.js" defer></script>
+    <script src="./js/jqBootstrapValidation.min.js" defer></script>
+    <script src="./js/formHandler.min.js" defer></script>
 
     <title>La chouette agence - Contact</title>
 
@@ -30,6 +30,7 @@
 
     <!-- Analytics END -->
   </head>
+
   <body>
     <!-- Principal conteneur -->
     <div class="page-container">
@@ -40,7 +41,7 @@
             <div class="navbar-header">
               <a class="navbar-brand" href="index.html"
                 ><img
-                  src="img/la-chouette-agence.png"
+                  src="img/la-chouette-agence.webp"
                   alt="atlanta web design logo"
                   height="40"
               /></a>
@@ -100,7 +101,7 @@
       <section class="bloc bgc-white l-bloc" id="bloc-7">
         <div class="container bloc-lg">
           <div class="row form-container">
-            <div class="col-sm-6">
+            <div class="col-sm-6 w100">
               <form
                 id="form_1"
                 novalidate
@@ -108,11 +109,11 @@
                 fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
               >
                 <div class="form-group">
-                  <label> Nom </label>
+                  <label for="name"> Nom </label>
                   <input id="name" class="form-control" required />
                 </div>
                 <div class="form-group">
-                  <label> Adresse email </label>
+                  <label for="email"> Adresse email </label>
                   <input
                     id="email"
                     class="form-control"
@@ -121,7 +122,9 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
+                  <label for="input_504">
+                    Comment nous avez-vous connu ?
+                  </label>
                   <input
                     class="form-control"
                     type="email"
@@ -130,7 +133,7 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label>
+                  <label for="message">
                     Brief de votre projet (Ajoutez autant de détails que
                     nécessaire)<br /> </label
                   ><textarea
@@ -150,7 +153,7 @@
               </form>
             </div>
             <div class="col-sm-6">
-              <p class='form'>
+              <p class="form">
                 contact@lachouetteagence.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
                 de 9h à 18h, du lundi au vendredi<br />
               </p>
@@ -174,33 +177,56 @@
               <p class="color-gray text-center white">
                 La chouette agence - Agence web basée à Lyon.<br />
               </p>
-              <div class="row row-no-gutters social">
+              <div class="row row-no-gutters social change-display">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-twitter icon-md"></span
-                    ></a>
+                    <a
+                      class="social"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://twitter.com/"
+                      ><span class="fa fa-twitter icon-md">
+                        <div class="reseau-social">Twitter</div>
+                      </span></a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-facebook icon-md"></span
-                    ></a>
+                    <a
+                      class="social"
+                      rel="noopener noreferrer"
+                      href="https://www.facebook.com/"
+                      ><span class="fa fa-facebook icon-md">
+                        <div class="reseau-social">Facebook</div></span
+                      ></a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-dribbble icon-md"></span
-                    ></a>
+                    <a
+                      class="social"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://dribbble.com/"
+                      ><span class="fa fa-dribbble icon-md">
+                        <div class="reseau-social">Dribble</div></span
+                      ></a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-instagram icon-md"></span
-                    ></a>
+                    <a
+                      class="social"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href="https://www.instagram.com/?hl=fr"
+                      ><span class="fa fa-instagram icon-md">
+                        <div class="reseau-social">Instagram</div></span
+                      ></a
+                    >
                   </div>
                 </div>
               </div>

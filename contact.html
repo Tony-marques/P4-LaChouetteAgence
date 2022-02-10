@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
@@ -82,7 +82,7 @@
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center hero-bloc-text tc-white">
+              <h1 class="text-center hero-bloc-text tc-white fsize">
                 Parlons web design !
               </h1>
               <p class="text-center mg-lg tc-white tight-width-whitespace">
@@ -102,12 +102,7 @@
         <div class="container bloc-lg">
           <div class="row form-container">
             <div class="col-sm-6 w100">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-              >
+              <form id="form_1" novalidate>
                 <div class="form-group">
                   <label for="name"> Nom </label>
                   <input id="name" class="form-control" required />
@@ -164,7 +159,7 @@
       <!-- bloc-7 END -->
 
       <!-- ScrollToTop Button -->
-      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
+      <a class="bloc-button btn btn-d scrollToTop" href="#bloc-0"
         ><span class="fa fa-chevron-up"></span
       ></a>
       <!-- ScrollToTop Button END-->
@@ -174,7 +169,7 @@
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
-              <p class="color-gray text-center white">
+              <p class="color-black text-center white">
                 La chouette agence - Agence web basée à Lyon.<br />
               </p>
               <div class="row row-no-gutters social change-display">
@@ -186,7 +181,7 @@
                       rel="noopener noreferrer"
                       href="https://twitter.com/"
                       ><span class="fa fa-twitter icon-md">
-                        <div class="reseau-social">Twitter</div>
+                        <span class="reseau-social">Twitter</span>
                       </span></a
                     >
                   </div>
@@ -198,7 +193,7 @@
                       rel="noopener noreferrer"
                       href="https://www.facebook.com/"
                       ><span class="fa fa-facebook icon-md">
-                        <div class="reseau-social">Facebook</div></span
+                        <span class="reseau-social">Facebook</span></span
                       ></a
                     >
                   </div>
@@ -211,7 +206,7 @@
                       rel="noopener noreferrer"
                       href="https://dribbble.com/"
                       ><span class="fa fa-dribbble icon-md">
-                        <div class="reseau-social">Dribble</div></span
+                        <span class="reseau-social">Dribble</span></span
                       ></a
                     >
                   </div>
@@ -224,7 +219,7 @@
                       target="_blank"
                       href="https://www.instagram.com/?hl=fr"
                       ><span class="fa fa-instagram icon-md">
-                        <div class="reseau-social">Instagram</div></span
+                        <span class="reseau-social">Instagram</span></span
                       ></a
                     >
                   </div>

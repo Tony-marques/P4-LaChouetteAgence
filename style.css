@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -576,7 +580,7 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0;
+  display: none;
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -587,7 +591,7 @@ button {
 
 .showScrollTop {
   font-size: 14px;
-  opacity: 1;
+  display: block;
 }
 
 a[data-lightbox] {
@@ -858,9 +862,14 @@ h4 {
 }
 
 .fa {
-  color: #fff !important;
+  color: black !important;
   display: flex !important;
   flex-direction: column !important;
+  transition: color 0.4s;
+}
+
+.fa:hover {
+  color: white !important;
 }
 
 .fa .reseau-social {
@@ -879,10 +888,10 @@ h4 {
 }
 
 /* CHANGEMENTS / AJOUT */
-.color-gray {
-  color: white !important;
+.color-black {
+  color: black !important;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-bottom: 1rem !important;
 }
 
@@ -1012,8 +1021,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
+    /* padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right); */
   }
 }
 
@@ -1132,8 +1141,8 @@ h4 {
   }
 
   .bloc {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .bloc-xxl,
@@ -1205,13 +1214,25 @@ h4 {
 
 @media (max-width: 400px) {
   .bloc {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #slogan,
+  #phrase-accroche {
+    font-size: 1.7rem;
+  }
+  .fsize {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 767px) {
   .bloc-mob-center-text {
     text-align: center;
+  }
+  #slogan,
+  #phrase-accroche,
+  #title2 {
+    width: 100%;
   }
 }
